@@ -1,0 +1,296 @@
+%-------------------------
+% Resume in Latex
+% Author : Akash
+% Based off of: https://github.com/akash5100/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+\titleformat{\section}{
+  \vspace{2pt} \scshape \raggedright\large % header section
+}{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{RoyalBlue} {\titlerule[2pt]} \vspace{-4pt}]
+
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{black}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\setlength{\footskip}{4.08003pt}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Akash} {\Huge Verma} \\ \vspace{5pt}
+    \centerline{\textbf{Software Engineer}} \vspace{5pt}
+    \small \texttt{\href{https://wa.me/+916261520084}{+91 62-6152-0084}} \hspace{1pt} $|$
+    \hspace{1pt} \hspace{2pt} \texttt{\href{mailto:akashzsh08@gmail.com}{akashzsh08@gmail.com}} \hspace{1pt} $|$ 
+    \hspace{1pt} \hspace{2pt} \texttt{\href{https://akashverma.vercel.app}{Website}} \hspace{1pt} $|$
+    \hspace{1pt} \hspace{2pt}\texttt{\href{https://github.com/akash5100}{github/akash5100}} \hspace{1pt} $|$
+    \hspace{1pt} \hspace{2pt}\texttt{\href{https://www.linkedin.com/in/akash5100/}{linkedin/akash5100}} \hspace{1pt}
+    \\ \vspace{-5pt}
+\end{center}
+
+
+%------------EDUCATION-------------------
+
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    %%%%%%%%%%%%%% College %%%%%%%%%%%%%%%%%%%
+    \resumeSubheading
+      {B.Tech in Computer Science and Engineering}{Jun. 2019 - Aug. 2023}
+      {Shri Shankaracharya Institute of Professional Management and Technology, \textbf{8.94} CPI}{Chhattisgarh, India}
+        % \resumeItemListStart
+        %     \resumeItem{\textbf{8.94} Cumulative Performance Index}
+        % \resumeItemListEnd
+    %%%%%%%%%%%%%%% 12th %%%%%%%%%%%%%%%%%%%%%
+    \resumeSubheading
+      {Senior Secondary}{May 2017 - May 2019}
+      {DAV High School, \textbf{87\%} in CBSE Boards}{Chhattisgarh, India}
+        % \resumeItemListStart
+        %     \resumeItem{\textbf{87\%} in CBSE boards}
+        % \resumeItemListEnd
+
+    %%%%%%%%%%%%%%% 10th %%%%%%%%%%%%%%%%%%%%
+    % \resumeSubheading
+    %   {Class 10th Board}{Jun. 2006 - Apr. 2017}
+    %   {Sacred Heart High School}{Chhattisgarh, India}
+    %     \resumeItemListStart
+    %         \resumeItem{\textbf{83\%} in ICSE boards}
+    %     \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS--------------
+
+%--------------SKILLS--------------------
+\vspace{-15pt}
+
+
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}              {: Python, JavaScript, C, C++} \vspace{2pt} \\
+     \textbf{Frameworks \& Libraries}{: Next.js, Express.js, Node.js, TailwindCSS, SQLite3} \vspace{2pt} \\
+     \textbf{Misc}                   {: Linux, Software testing, Restful APIs, Data structure \& Algorithm, OOPs, DBMS, HTML/CSS} \vspace{2pt} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE----------
+\vspace{-15pt}
+
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {\href{https://summerofcode.withgoogle.com/programs/2022/projects/HXCZO14B}{Google Summer of Code Student Developer}}{May. 2022 - Sept. 2022}
+      {\href{https://openastronomy.org}{OpenAstronomy} @ \href{https://sunpy.org}{\textbf{SunPy}}}{Remote}
+      \resumeItemListStart
+        \resumeItem{Created a Python library \textbf{\myuline{{\href{https://github.com/Helioviewer-Project/python-api/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{HvPy}}}} for interacting with Helioviewer’s servers, hosted in \textbf{\href{https://pypi.org/project/hvpy/}{\myuline{PyPI}}}.}
+        \resumeItem{Implemented and \textbf{brought support} of all the API endpoints(19+), will be used by solar physicists for research.}
+        \resumeItem {Wrote \textbf{facade} functions for users to \textbf{simplify} the monster back-end.}
+    \resumeItemListEnd
+    
+    \vspace{-6pt}\resumeSubheading
+      {Software Engineer, Intern}{Dec. 2021 - Feb. 2022}
+      {\href{https://feldroy.com}{Feldroy}}{Dallas TX, United States} % Location
+      \resumeItemListStart
+        \resumeItem {Worked in the building of the book \textbf{A Wedge of Django} directly under mentorship of \myuline{\href{https://www.feldroy.com/about-us}{\textbf{authors}}}.}
+        \resumeItem {\textbf{Automate} the process of building books written in Google Docs and rendering them as PDF and ePub.}
+        \resumeItem {Worked with the following libraries: \textbf{Typer}, PyPdf, Several ePub libraries, Various Google Drive SDKs.}
+        \resumeItem {Expanded the basic architecture specified into a working CLI which \textbf{reduces} the manual work of \textbf{30 min} to \textbf{1 min}.}
+        \resumeItem {Worked on another product that uses artificial intelligence to \textbf{improve voice recognition} software integration with Discord and/or other desktop apps.}
+        \resumeItem {Letter of recommendation by Daniel Feldroy.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%----------OS CONTRI-------------
+\vspace{-15pt}
+
+\section{OPENSOURCE CONTRIBUTIONS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{SunPy}} {\myuline{\href{https://github.com/sunpy/sunpy/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{View merged pull requests}}}
+          \resumeItemListStart
+            \resumeItem {Added a script to sunpy/tools to automate the process of updating vendored code.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Margarita Humanitarian Foundation}} {\myuline{\href{https://github.com/margaritahumanitarian/helpmespeak}{View source}}}
+          \resumeItemListStart
+            \resumeItem {Worked on the \textbf{Helpmespeak} project which summarize and improve long voice dictation input along with fixing the grammatical errors that occur during voice typing.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Learning Equality}}{\myuline{\href{https://github.com/learningequality/kolibri/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{View merged pull requests}}}
+          \resumeItemListStart
+            \resumeItem {Fixed some front-end rendering bugs in the main kolibri project.}
+          \resumeItemListEnd
+    %   \resumeProjectHeading
+    %       {\textbf{GreenStand}}{\myuline{\href{}{View merged pull requests}}}
+    %       \resumeItemListStart
+    %         \resumeItem {}
+    %       \resumeItemListEnd      
+    
+    \resumeSubHeadingListEnd
+
+%----------PROJECTS-------------
+\vspace{-15pt}
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Portfolio Website}} {\myuline{\href{https://akashverma.vercel.app}{Visit site}}}
+          \resumeItemListStart
+            \resumeItem{Built in Next.js framework, with TailwindCSS for styling.}
+            \resumeItem{The Articles and Work page uses GitHub API to pull the data from private repository and render them down in the site.}
+          \resumeItemListEnd
+
+        % \vspace{-15pt}\resumeProjectHeading
+        %   {\textbf{Linked List Database Management}}{\myuline{{\href{https://github.com/akash5100/linked-list-data-management}{View source code}}}}
+        %   \resumeItemListStart
+        %     \resumeItem{A CLI for \textbf{managing data} with the CRUD operation on a .csv file.}
+        %     \resumeItem{Makefile to \textbf{automate} the compilation of multiple files by a single command.}
+        %   \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+% \vspace{-20pt}
+
+% \section{ACHIEVEMENTS}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Portfolio Website}} {\myuline{\href{https://akashverma.vercel.app}{Visit site}}}
+%           \resumeItemListStart
+%             \resumeItem{Built in Next.js framework, with TailwindCSS for styling.}
+%             \resumeItem{The Articles and Work page uses GitHub API to pull the data from private repository and render them down in the site.}
+%           \resumeItemListEnd
+
+%         % \vspace{-15pt}\resumeProjectHeading
+%         %   {\textbf{Linked List Database Management}}{\myuline{{\href{https://github.com/akash5100/linked-list-data-management}{View source code}}}}
+%         %   \resumeItemListStart
+%         %     \resumeItem{A CLI for \textbf{managing data} with the CRUD operation on a .csv file.}
+%         %     \resumeItem{Makefile to \textbf{automate} the compilation of multiple files by a single command.}
+%         %   \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+\end{document}
+%-------------------------------
