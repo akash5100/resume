@@ -2,7 +2,6 @@
 % Resume in Latex
 % Author : Akash
 % Based off of: https://github.com/akash5100/resume
-% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -75,14 +74,14 @@
 
 % Sections formatting - serif
 \titleformat{\section}{
-  \vspace{2pt} \scshape \raggedright\large % header section
+  \vspace{2pt} \scshape \raggedright % header section
 }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
 
 
 % sans serif sections
 \titleformat {\section}{
-    \bfseries \vspace{2pt} \raggedright \large % header section
-}{}{0em}{}[\color{RoyalBlue} {\titlerule[2pt]} \vspace{-4pt}]
+    \bfseries \vspace{1pt} \raggedright % header section
+}{}{0em}{}[\color{RoyalBlue} {\titlerule[1pt]} \vspace{-4pt}]
 
 
 % only for pdflatex
@@ -100,23 +99,23 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
-      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+      \textbf{\small #1} & {\color{dark-grey}\footnotesize #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{\small #3} & {\color{dark-grey} \footnotesize #4}\\ % second row of resume entry
     \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & \textit{\small #2} \\
-    \end{tabular*}\vspace{-4pt}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -138,8 +137,8 @@
 \setlength{\footskip}{4.08003pt}
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge Akash} {\Huge Verma} \\ \vspace{5pt}
-    \centerline{\textbf{Software Engineer}} \vspace{5pt}
+    {\Huge Akash Verma} \\ \vspace{4pt}
+    \centerline{Software Engineer} \vspace{5pt}
     \small \texttt{\href{https://wa.me/+916261520084}{+91 62-6152-0084}} \hspace{1pt} $|$
     \hspace{1pt} \hspace{2pt} \texttt{\href{mailto:akashzsh08@gmail.com}{akashzsh08@gmail.com}} \hspace{1pt} $|$ 
     \hspace{1pt} \hspace{2pt} \texttt{\href{https://akashverma.vercel.app}{Website}} \hspace{1pt} $|$
@@ -149,119 +148,90 @@
 \end{center}
 
 
-%------------EDUCATION-------------------
-
-\section {EDUCATION}
-  \resumeSubHeadingListStart
-    %%%%%%%%%%%%%% College %%%%%%%%%%%%%%%%%%%
-    \resumeSubheading
-      {B.Tech in Computer Science and Engineering}{Jun. 2019 - Aug. 2023}
-      {Shri Shankaracharya Institute of Professional Management and Technology, \textbf{8.94} CPI}{Chhattisgarh, India}
-        % \resumeItemListStart
-        %     \resumeItem{\textbf{8.94} Cumulative Performance Index}
-        % \resumeItemListEnd
-    %%%%%%%%%%%%%%% 12th %%%%%%%%%%%%%%%%%%%%%
-    \resumeSubheading
-      {Senior Secondary}{May 2017 - May 2019}
-      {DAV High School, \textbf{87\%} in CBSE Boards}{Chhattisgarh, India}
-        % \resumeItemListStart
-        %     \resumeItem{\textbf{87\%} in CBSE boards}
-        % \resumeItemListEnd
-
-    %%%%%%%%%%%%%%% 10th %%%%%%%%%%%%%%%%%%%%
-    % \resumeSubheading
-    %   {Class 10th Board}{Jun. 2006 - Apr. 2017}
-    %   {Sacred Heart High School}{Chhattisgarh, India}
-    %     \resumeItemListStart
-    %         \resumeItem{\textbf{83\%} in ICSE boards}
-    %     \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------SKILLS--------------
 
 %--------------SKILLS--------------------
-\vspace{-15pt}
+\vspace{-17pt}
 
 
-\section{SKILLS}
+\section{Skills}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
      \textbf{Languages}              {: Python, JavaScript, C, C++} \vspace{2pt} \\
      \textbf{Frameworks \& Libraries}{: Next.js, Express.js, Node.js, TailwindCSS, SQLite3} \vspace{2pt} \\
-     \textbf{Misc}                   {: Linux, Software testing, Restful APIs, Data structure \& Algorithm, OOPs, DBMS, HTML/CSS} \vspace{2pt} \\
+     \textbf{Misc}                   {: Linux, Software testing, Restful APIs, Data structure \& Algorithms, OOPs, DBMS, HTML/CSS} \vspace{2pt} \\
     }}
  \end{itemize}
 
 
 %-----------EXPERIENCE----------
-\vspace{-15pt}
+\vspace{-17pt}
 
-\section{PROFESSIONAL EXPERIENCE}
+\section{Professional Experience}
   \resumeSubHeadingListStart
   
     \resumeSubheading
       {\href{https://summerofcode.withgoogle.com/programs/2022/projects/HXCZO14B}{Google Summer of Code Student Developer}}{May. 2022 - Sept. 2022}
-      {\href{https://openastronomy.org}{OpenAstronomy} @ \href{https://sunpy.org}{\textbf{SunPy}}}{Remote}
+      {\href{https://openastronomy.org}{\textbf{OpenAstronomy}} @ \href{https://sunpy.org}{\textbf{SunPy}}}{Remote}
       \resumeItemListStart
-        \resumeItem{Created a Python library \textbf{\myuline{{\href{https://github.com/Helioviewer-Project/python-api/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{HvPy}}}} for interacting with Helioviewer’s servers, hosted in \textbf{\href{https://pypi.org/project/hvpy/}{\myuline{PyPI}}}.}
-        \resumeItem{Implemented and \textbf{brought support} of all the API endpoints(19+), will be used by solar physicists for research.}
-        \resumeItem {Wrote \textbf{facade} functions for users to \textbf{simplify} the monster back-end.}
+        \resumeItem{Built a library to interact with the Helioviewer server used by \textbf{600} students monthly.}
+        \resumeItem{Implemented and brought support of the \textbf{16} API endpoints to serve the solar physicists for research.}
+        \resumeItem {Constructed \textbf{16} facade functions for users to enhance the back-end response.}
     \resumeItemListEnd
     
     \vspace{-6pt}\resumeSubheading
       {Software Engineer, Intern}{Dec. 2021 - Feb. 2022}
-      {\href{https://feldroy.com}{Feldroy}}{Dallas TX, United States} % Location
+      {\href{https://feldroy.com}{\textbf{Feldroy}}}{Dallas TX, United States} % Location
       \resumeItemListStart
-        \resumeItem {Worked in the building of the book \textbf{A Wedge of Django} directly under mentorship of \myuline{\href{https://www.feldroy.com/about-us}{\textbf{authors}}}.}
-        \resumeItem {\textbf{Automate} the process of building books written in Google Docs and rendering them as PDF and ePub.}
-        \resumeItem {Worked with the following libraries: \textbf{Typer}, PyPdf, Several ePub libraries, Various Google Drive SDKs.}
-        \resumeItem {Expanded the basic architecture specified into a working CLI which \textbf{reduces} the manual work of \textbf{30 min} to \textbf{1 min}.}
-        \resumeItem {Worked on another product that uses artificial intelligence to \textbf{improve voice recognition} software integration with Discord and/or other desktop apps.}
-        \resumeItem {Letter of recommendation by Daniel Feldroy.}
+        \resumeItem {Engineered a Python script to devise the flow of compiling a book and put into production; decreasing the manual work by \textbf{98\%}.}
+        \resumeItem {Eliminated the manual work by automating the process of compiling books written in Google Docs and rendering them as PDF and ePub; with 7 CLI functions.}
+        \resumeItem {Interpreted and implemented the application with the following libraries(10+): Typer, PyPdf, Google Drive SDKs, requests, google-auth, tqdm, reportlab.}
+        \resumeItem {Expanded the basic architecture specified into a working CLI which \textbf{reduces} the lengthy manual work to \textbf{1 min}.}
+        \resumeItem {Designed a product that uses artificial intelligence to \textbf{improve} the voice recognition and voice to text conversion; summarizes 15 seconds reading around 20 percent of any voice input text.}
+        \resumeItem {Supervised by the renowned authors of the book \href{https://www.feldroy.com/books/two-scoops-of-django-3-x}{\textbf{\myuline{Two scoops of Django}}}, \myuline{\href{https://www.feldroy.com/about-us}{\textbf{"Audrey Roy Greenfeld"} and \textbf{"Daniel Roy Greenfeld"}}}.}
       \resumeItemListEnd
       
   \resumeSubHeadingListEnd
 
 %----------OS CONTRI-------------
-\vspace{-15pt}
+\vspace{-17pt}
 
-\section{OPENSOURCE CONTRIBUTIONS}
+\section{Open-Source Contributons}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{SunPy}} {\myuline{\href{https://github.com/sunpy/sunpy/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{View merged pull requests}}}
+          {\textbf{SunPy}} {\myuline{\href{https://github.com/sunpy/sunpy/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{See contributions}}}
           \resumeItemListStart
-            \resumeItem {Added a script to sunpy/tools to automate the process of updating vendored code.}
+            \resumeItem {Created a tool script for sunpy core to automate the process of updating vendored code; reducing the time consumed in manual work by approx. \textbf{5} sec.}
           \resumeItemListEnd
       
       \resumeProjectHeading
-          {\textbf{Margarita Humanitarian Foundation}} {\myuline{\href{https://github.com/margaritahumanitarian/helpmespeak}{View source}}}
+          {\textbf{Margarita Humanitarian Foundation}} {\myuline{\href{https://github.com/margaritahumanitarian/helpmespeak}{Visit project source}}}
           \resumeItemListStart
-            \resumeItem {Worked on the \textbf{Helpmespeak} project which summarize and improve long voice dictation input along with fixing the grammatical errors that occur during voice typing.}
+            \resumeItem {Map out the project and accomplish in making the charitable \textbf{Helpmespeak} project which summarizes and improves long voice dictation input along with fixing the grammatical errors that occur during voice typing; reduces text length by \textbf{20\%}.}
           \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{Learning Equality}}{\myuline{\href{https://github.com/learningequality/kolibri/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{View merged pull requests}}}
-          \resumeItemListStart
-            \resumeItem {Fixed some front-end rendering bugs in the main kolibri project.}
-          \resumeItemListEnd
     %   \resumeProjectHeading
-    %       {\textbf{GreenStand}}{\myuline{\href{}{View merged pull requests}}}
+    %       {\textbf{Learning Equality}}{\myuline{\href{https://github.com/learningequality/kolibri/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{View pull requests}}}
     %       \resumeItemListStart
-    %         \resumeItem {}
-    %       \resumeItemListEnd      
+    %         \resumeItem {Fixed some front-end rendering bugs in the main kolibri project.}
+    %       \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{GreenStand}}{\myuline{\href{https://github.com/Greenstand/treetracker-web-map-client/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100+label\%3A\%22released+on+\%40beta\%22}{View pull requests}}}
+          \resumeItemListStart
+            \resumeItem {Planned and implement the custom \textbf{404 page} for the main Greenstand org client website; furthermore solved a front-end google map dropped pin highlighting bug.}
+          \resumeItemListEnd      
     
     \resumeSubHeadingListEnd
 
 %----------PROJECTS-------------
-\vspace{-15pt}
+\vspace{-17pt}
 
-\section{PROJECTS}
+\section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{Portfolio Website}} {\myuline{\href{https://akashverma.vercel.app}{Visit site}}}
           \resumeItemListStart
-            \resumeItem{Built in Next.js framework, with TailwindCSS for styling.}
-            \resumeItem{The Articles and Work page uses GitHub API to pull the data from private repository and render them down in the site.}
+            \resumeItem{Contrive and built 10+ \textbf{authenticated} REST API endpoints.}
+            \resumeItem{Extracted repository data by making HTTP request to GitHub, manipulate the data and render them down in the site; thus \textbf{reducing the cost} (9 USD/month) to host a database in cloud.}
           \resumeItemListEnd
 
         % \vspace{-15pt}\resumeProjectHeading
@@ -290,6 +260,35 @@
 %         %     \resumeItem{Makefile to \textbf{automate} the compilation of multiple files by a single command.}
 %         %   \resumeItemListEnd
 %     \resumeSubHeadingListEnd
+
+%------------EDUCATION-------------------
+\vspace{-17pt}
+\section {Education}
+  \resumeSubHeadingListStart
+    %%%%%%%%%%%%%% College %%%%%%%%%%%%%%%%%%%
+    \resumeSubheading
+      {Shri Shankaracharya Institute of Professional Management and Technology}{Jun. 2019 - Aug. 2023}
+      {Bachelor of Technology, Computer Science and Engineering ------ GPA 3.4}{Chhattisgarh, India}
+        % \resumeItemListStart
+        %     \resumeItem{GPA 3.4}
+        % \resumeItemListEnd
+    %%%%%%%%%%%%%%% 12th %%%%%%%%%%%%%%%%%%%%%
+    % \resumeSubheading
+    %   {Senior Secondary}{May 2017 - May 2019}
+    %   {DAV High School, \textbf{87\%} in CBSE Boards}{Chhattisgarh, India}
+        % \resumeItemListStart
+        %     \resumeItem{\textbf{87\%} in CBSE boards}
+        % \resumeItemListEnd
+
+    %%%%%%%%%%%%%%% 10th %%%%%%%%%%%%%%%%%%%%
+    % \resumeSubheading
+    %   {Class 10th Board}{Jun. 2006 - Apr. 2017}
+    %   {Sacred Heart High School}{Chhattisgarh, India}
+    %     \resumeItemListStart
+    %         \resumeItem{\textbf{83\%} in ICSE boards}
+    %     \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
 
 
 \end{document}
