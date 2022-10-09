@@ -6,6 +6,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -17,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[most]{tcolorbox}
 % only for pdflatex
 % \input{glyphtounicode}
 
@@ -27,6 +29,7 @@
 \usepackage[scale=0.90,lf]{FiraMono}
 
 % light-grey
+\definecolor{lightest-grey}{gray}{0.93}
 \definecolor{light-grey}{gray}{0.83}
 \definecolor{dark-grey}{gray}{0.3}
 \definecolor{text-grey}{gray}{.08}
@@ -44,6 +47,12 @@
   \llap{\contour{white}{#1}}%
 }
 
+% skill box function
+\tcbset{on line, 
+        boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+        colframe=white,colback=lightest-grey,  
+        highlight math style={enhanced}
+    }
 
 % custom font: helvetica-style
 \usepackage{tgheros}
@@ -134,141 +143,45 @@
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\setlength{\footskip}{4.08003pt}
+\setlength{\footskip}{4pt}
 %----------HEADING----------
-\begin{center}
-    {\Huge Akash Verma} \\ \vspace{4pt}
-    \centerline{Software Engineer} \vspace{5pt}
-    \small \texttt{\href{https://wa.me/+916261520084}{+91 62-6152-0084}} \hspace{1pt} $|$
-    \hspace{1pt} \hspace{2pt} \texttt{\href{mailto:akashzsh08@gmail.com}{akashzsh08@gmail.com}} \hspace{1pt} $|$ 
-    \hspace{1pt} \hspace{2pt} \texttt{\href{https://akashverma.vercel.app}{Website}} \hspace{1pt} $|$
-    \hspace{1pt} \hspace{2pt}\texttt{\href{https://github.com/akash5100}{github/akash5100}} \hspace{1pt} $|$
-    \hspace{1pt} \hspace{2pt}\texttt{\href{https://www.linkedin.com/in/akash5100/}{linkedin/akash5100}} \hspace{1pt}
-    \\ \vspace{-5pt}
-\end{center}
-
-
-
-%--------------SKILLS--------------------
-\vspace{-17pt}
-
-
-\section{Skills}
- \begin{itemize}[leftmargin=0in, label={}]
-    \small{\item{
-     \textbf{Languages}              {: Python, JavaScript, C, C++} \vspace{2pt} \\
-     \textbf{Frameworks \& Libraries}{: Next.js, Express.js, Node.js, TailwindCSS, SQLite3} \vspace{2pt} \\
-     \textbf{Misc}                   {: Linux, Software testing, Restful APIs, Data structure \& Algorithms, OOPs, DBMS, HTML/CSS} \vspace{2pt} \\
-    }}
- \end{itemize}
-
-
-%-----------EXPERIENCE----------
-\vspace{-17pt}
-
-\section{Professional Experience}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {\href{https://summerofcode.withgoogle.com/programs/2022/projects/HXCZO14B}{Google Summer of Code Student Developer}}{May. 2022 - Sept. 2022}
-      {\href{https://openastronomy.org}{\textbf{OpenAstronomy}} @ \href{https://sunpy.org}{\textbf{SunPy}}}{Remote}
-      \resumeItemListStart
-        \resumeItem{Built a library to interact with the Helioviewer server used by \textbf{600} students monthly.}
-        \resumeItem{Implemented and brought support of the \textbf{16} API endpoints to serve the solar physicists for research.}
-        \resumeItem {Constructed \textbf{16} facade functions for users to enhance the back-end response.}
-    \resumeItemListEnd
+\begin{minipage}[b]{0.24\textwidth}
+        \small \href{https://wa.me/+916261520084}{+91 626-152-0084} \\
+        \small \href{mailto:akashzsh@gmail.com}{akashzsh08@gmail.com} \vspace{4pt} 
+\end{minipage}% 
+\begin{minipage}[b]{0.5\textwidth}
+        \centering
+        {\Huge Akash Verma} \\ %
+        \vspace{5pt}
+        {\Large{Software Engineer} \vspace{5pt}}  \\
+\end{minipage}% 
+\begin{minipage}[b]{0.26\textwidth}
+        \flushright \small  %Willing to Relocate
+        {\href{https://www.linkedin.com/in/link/}{linkedin.com/in/akash5100}} \\
+        \href{https://github.com/akash5100}{github.com/akash5100} \\
+        \href{https://akashverma.vercel.app}{Website} \\
+        \vspace{4pt}
+\end{minipage}  
     
-    \vspace{-6pt}\resumeSubheading
-      {Software Engineer, Intern}{Dec. 2021 - Feb. 2022}
-      {\href{https://feldroy.com}{\textbf{Feldroy}}}{Dallas TX, United States} % Location
-      \resumeItemListStart
-        \resumeItem {Engineered a Python script to devise the flow of compiling a book and put into production; decreasing the manual work by \textbf{98\%}.}
-        \resumeItem {Eliminated the manual work by automating the process of compiling books written in Google Docs and rendering them as PDF and ePub; with 7 CLI functions.}
-        \resumeItem {Interpreted and implemented the application with the following libraries(10+): Typer, PyPdf, Google Drive SDKs, requests, google-auth, tqdm, reportlab.}
-        \resumeItem {Expanded the basic architecture specified into a working CLI which \textbf{reduces} the lengthy manual work to \textbf{1 min}.}
-        \resumeItem {Designed a product that uses artificial intelligence to \textbf{improve} the voice recognition and voice to text conversion; summarizes 15 seconds reading around 20 percent of any voice input text.}
-        \resumeItem {Supervised by the renowned authors of the book \href{https://www.feldroy.com/books/two-scoops-of-django-3-x}{\textbf{\myuline{Two scoops of Django}}}, \myuline{\href{https://www.feldroy.com/about-us}{\textbf{"Audrey Roy Greenfeld"} and \textbf{"Daniel Roy Greenfeld"}}}.}
-      \resumeItemListEnd
-      
-  \resumeSubHeadingListEnd
-
-%----------OS CONTRI-------------
-\vspace{-17pt}
-
-\section{Open-Source Contributons}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{SunPy}} {\myuline{\href{https://github.com/sunpy/sunpy/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{See contributions}}}
-          \resumeItemListStart
-            \resumeItem {Created a tool script for sunpy core to automate the process of updating vendored code; reducing the time consumed in manual work by approx. \textbf{5} sec.}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-          {\textbf{Margarita Humanitarian Foundation}} {\myuline{\href{https://github.com/margaritahumanitarian/helpmespeak}{Visit project source}}}
-          \resumeItemListStart
-            \resumeItem {Map out the project and accomplish in making the charitable \textbf{Helpmespeak} project which summarizes and improves long voice dictation input along with fixing the grammatical errors that occur during voice typing; reduces text length by \textbf{20\%}.}
-          \resumeItemListEnd
-
-    %   \resumeProjectHeading
-    %       {\textbf{Learning Equality}}{\myuline{\href{https://github.com/learningequality/kolibri/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{View pull requests}}}
-    %       \resumeItemListStart
-    %         \resumeItem {Fixed some front-end rendering bugs in the main kolibri project.}
-    %       \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{GreenStand}}{\myuline{\href{https://github.com/Greenstand/treetracker-web-map-client/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100+label\%3A\%22released+on+\%40beta\%22}{View pull requests}}}
-          \resumeItemListStart
-            \resumeItem {Planned and implement the custom \textbf{404 page} for the main Greenstand org client website; furthermore solved a front-end google map dropped pin highlighting bug.}
-          \resumeItemListEnd      
-    
-    \resumeSubHeadingListEnd
-
-%----------PROJECTS-------------
-\vspace{-17pt}
-
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Portfolio Website}} {\myuline{\href{https://akashverma.vercel.app}{Visit site}}}
-          \resumeItemListStart
-            \resumeItem{Contrive and built 10+ \textbf{authenticated} REST API endpoints.}
-            \resumeItem{Extracted repository data by making HTTP request to GitHub, manipulate the data and render them down in the site; thus \textbf{reducing the cost} (9 USD/month) to host a database in cloud.}
-          \resumeItemListEnd
-
-        % \vspace{-15pt}\resumeProjectHeading
-        %   {\textbf{Linked List Database Management}}{\myuline{{\href{https://github.com/akash5100/linked-list-data-management}{View source code}}}}
-        %   \resumeItemListStart
-        %     \resumeItem{A CLI for \textbf{managing data} with the CRUD operation on a .csv file.}
-        %     \resumeItem{Makefile to \textbf{automate} the compilation of multiple files by a single command.}
-        %   \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-% \vspace{-20pt}
-
-% \section{ACHIEVEMENTS}
-%     \resumeSubHeadingListStart
-%       \resumeProjectHeading
-%           {\textbf{Portfolio Website}} {\myuline{\href{https://akashverma.vercel.app}{Visit site}}}
-%           \resumeItemListStart
-%             \resumeItem{Built in Next.js framework, with TailwindCSS for styling.}
-%             \resumeItem{The Articles and Work page uses GitHub API to pull the data from private repository and render them down in the site.}
-%           \resumeItemListEnd
-
-%         % \vspace{-15pt}\resumeProjectHeading
-%         %   {\textbf{Linked List Database Management}}{\myuline{{\href{https://github.com/akash5100/linked-list-data-management}{View source code}}}}
-%         %   \resumeItemListStart
-%         %     \resumeItem{A CLI for \textbf{managing data} with the CRUD operation on a .csv file.}
-%         %     \resumeItem{Makefile to \textbf{automate} the compilation of multiple files by a single command.}
-%         %   \resumeItemListEnd
-%     \resumeSubHeadingListEnd
+% \begin{center}
+%     {\Huge Akash Verma} \\ \vspace{4pt}
+%     \centerline{Software Engineer} \vspace{5pt}
+%     \small \texttt{\href{https://wa.me/+916261520084}{+91 6261520084}} \hspace{1pt} $|$
+%     \hspace{1pt} \hspace{2pt} \texttt{\href{mailto:akashzsh08@gmail.com}{akashzsh08@gmail.com}} \hspace{1pt} $|$ 
+%     \hspace{1pt} \hspace{2pt} \texttt{\href{https://akashverma.vercel.app}{Website}} \hspace{1pt} $|$
+%     \hspace{1pt} \hspace{2pt}\texttt{\href{https://github.com/akash5100}{github.com/akash5100}} \hspace{1pt} $|$
+%     \hspace{1pt} \hspace{2pt}\texttt{\href{https://www.linkedin.com/in/akash5100/}{linkedin.com/in/akash5100}} \hspace{1pt}
+%     \\ \vspace{-5pt}
+% \end{center}
 
 %------------EDUCATION-------------------
 \vspace{-17pt}
-\section {Education}
+\section {\textcolor{RoyalBlue}{Education}}
   \resumeSubHeadingListStart
     %%%%%%%%%%%%%% College %%%%%%%%%%%%%%%%%%%
     \resumeSubheading
-      {Shri Shankaracharya Institute of Professional Management and Technology}{Jun. 2019 - Aug. 2023}
-      {Bachelor of Technology, Computer Science and Engineering ------ GPA 3.4}{Chhattisgarh, India}
+      {Shri Shankaracharya Institute of Professional Management and Technology}{June 2019 --- August 2023}
+      {Bachelor of Technology, Computer Science and Engineering ------ GPA 3.4/4.0}{Chhattisgarh, India}
         % \resumeItemListStart
         %     \resumeItem{GPA 3.4}
         % \resumeItemListEnd
@@ -291,5 +204,105 @@
 
 
 
+%--------------SKILLS--------------------
+\vspace{-15pt}
+
+
+\section{\textcolor{RoyalBlue}{Skills}}
+%  \begin{itemize}[leftmargin=0in, label={}]
+%     \small{\item{
+%      \textbf{Languages}              {: Python, JavaScript, C, C++} \vspace{2pt} \\
+%      \textbf{Frameworks \& Libraries}{: Next.js, Express.js, Node.js, TailwindCSS, SQLite3} \vspace{2pt} \\
+%      \textbf{Misc}                   {: Linux, Software testing, Restful APIs, Data structure \& Algorithms, OOPs, DBMS, HTML/CSS} \vspace{2pt} \\
+%     }}
+%  \end{itemize}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    \tcbox{Python} \hfill \tcbox{JavaScript} \hfill \tcbox{C} \hfill \tcbox{C++} \hfill \tcbox{Next.js} \hfill \tcbox{Express.js} \hfill \tcbox{Node.js} \hfill \tcbox{tailwindCSS} \hfill \tcbox{SQLite3} \hfill \tcbox{Linux} \hfill \tcbox{Software Testing} \hfill \tcbox{Data Structures and Algorithms} \hfill \tcbox{Restful API} \hfill \tcbox{OOPs} \hfill \tcbox{DBMS} \hfill \tcbox{HTML/CSS} \hfill \tcbox{Git} \hfill \tcbox{Bootstrap}}}
+ \end{itemize}
+
+
+
+%-----------EXPERIENCE----------
+\vspace{-15pt}
+
+\section{\textcolor{RoyalBlue}{Work Experience}}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {\href{https://summerofcode.withgoogle.com/programs/2022/projects/HXCZO14B}{Google Summer of Code Student Developer}}{May 2022 --- September 2022}
+      {\href{https://openastronomy.org}{OpenAstronomy} @ \href{https://sunpy.org}{SunPy}}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built a library to interact with the Helioviewer server used by \textbf{600} students monthly.}
+        \resumeItem{Implemented and brought the support of the \textbf{16} API endpoints to serve the solar physicists for research.}
+        \resumeItem {Constructed \textbf{16} facade functions for users to enhance the back-end response.}
+    \resumeItemListEnd
+    
+    \vspace{-6pt}\resumeSubheading
+      {Software Engineer, Intern}{December 2021 --- February 2022}
+      {\href{https://feldroy.com}{Feldroy}}{Dallas TX, United States} % Location
+      \resumeItemListStart
+        \resumeItem {Engineered a Python script to devise the flow of compiling a book and put it into production decreasing the manual work by \textbf{98\%}.}
+        \resumeItem {Eliminated the manual work by automating the process of compiling books written in Google Docs and rendering them as PDF and ePub; with 7 CLI functions.}
+        \resumeItem {Interpreted and implemented the application with the following libraries(10+): Typer, PyPdf, Google Drive SDKs, requests, google-auth, tqdm, and reportlab.}
+        \resumeItem {Expanded the basic architecture specified into a working CLI which reduces the lengthy manual work to \textbf{1 min}.}
+        \resumeItem {Designed a product that uses artificial intelligence to \textbf{improve} the voice recognition and voice-to-text conversion; summarizes 15 seconds reading around 20 percent of any voice input text.}
+        \resumeItem {Supervised by the renowned authors of the book \href{https://www.feldroy.com/books/two-scoops-of-django-3-x}{\textbf{\myuline{Two scoops of Django}}}, \myuline{\href{https://www.feldroy.com/about-us}{\textbf{"Audrey Roy Greenfeld"} and \textbf{"Daniel Roy Greenfeld"}}}.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%----------OS CONTRIBUTIONS-------------
+\vspace{-15pt}
+
+\section{\textcolor{RoyalBlue}{Open-Source Contributions}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{SunPy --- Solar data analysis environment for Python}} {\myuline{\href{https://github.com/sunpy/sunpy/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{See contributions}}}
+          \resumeItemListStart
+            \resumeItem {Created a tool script for SunPy core to automate the process of updating vendor code; reducing the time consumed in manual work by \textbf{5} sec.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Margarita Humanitarian Foundation}} {\myuline{\href{https://github.com/margaritahumanitarian/helpmespeak}{Visit project source}}}
+          \resumeItemListStart
+            \resumeItem {Map out the project and execute it in making a charitable project \textbf{Helpmespeak} which summarizes and improves long voice dictation input and fixes the grammatical errors that occur during voice typing; reduces text length by \textbf{20\%}.}
+          \resumeItemListEnd
+
+    %   \resumeProjectHeading
+    %       {\textbf{Learning Equality}}{\myuline{\href{https://github.com/learningequality/kolibri/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100}{View pull requests}}}
+    %       \resumeItemListStart
+    %         \resumeItem {Fixed some front-end rendering bugs in the main kolibri project.}
+    %       \resumeItemListEnd
+    
+      \resumeProjectHeading
+          {\textbf{GreenStand}}{\myuline{\href{https://github.com/Greenstand/treetracker-web-map-client/pulls?q=is\%3Apr+is\%3Aclosed+author\%3Aakash5100+label\%3A\%22released+on+\%40beta\%22}{View pull requests}}}
+          \resumeItemListStart
+            \resumeItem {Planned and implement the custom \textbf{404 page} for the main Greenstand org client website; furthermore solved a front-end google map dropped pin highlighting bug.}
+          \resumeItemListEnd      
+    \resumeSubHeadingListEnd
+    
+
+%----------PROJECTS-------------
+\vspace{-15pt}
+
+\section{\textcolor{RoyalBlue}{Projects}}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Portfolio Website}} {\myuline{\href{https://akashverma.vercel.app}{Visit site}}}
+          \resumeItemListStart
+            \resumeItem{Contrive and built 10+ \textbf{authenticated} REST API endpoints.}
+            \resumeItem{Extracted repository data by making an HTTP request to GitHub, manipulating the data, and rendering down in the site; thus reducing the cost from \textbf{9 USD/month} (Heroku basic) to \textbf{0 USD}, to host a database in the cloud.}
+          \resumeItemListEnd
+
+        % \vspace{-15pt}\resumeProjectHeading
+        %   {\textbf{Linked List Database Management}}{\myuline{{\href{https://github.com/akash5100/linked-list-data-management}{View source code}}}}
+        %   \resumeItemListStart
+        %     \resumeItem{A CLI for \textbf{managing data} with the CRUD operation on a .csv file.}
+        %     \resumeItem{Makefile to \textbf{automate} the compilation of multiple files by a single command.}
+        %   \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
 \end{document}
 %-------------------------------
+
